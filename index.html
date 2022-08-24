@@ -13,10 +13,10 @@
 </head>
 <body>
   <main id="main-container" class="flex flex-col w-screen h-screen justify-center items-center">
-    <div class="flex flex-col p-3 gap-5 w-4/12">
+    <div class="flex flex-col p-3 gap-5 w-[30%]">
       <div class="bg-soft-red h-28 rounded-2xl p-5 flex justify-between items-center">
         <div id="text-container" class="">
-          <p class="text-sm text-white">My Balance</p>
+          <p class="text-sm text-white font-normal">My Balance</p>
           <p class="text-3xl text-white font-bold pt-2">$921.48</p>
         </div>
         <img src="./images/logo.svg" alt="">
@@ -24,48 +24,71 @@
       <div class="bg-veryPaleOrange rounded-2xl p-5">
         <h1 class="font-bold text-3xl text-darkBrown">Spending - Last 7 Days</h1>
         <div id="chart" class="flex h-60 w-full justify-evenly py-6 mt-4">
-          <div class="flex flex-col items-center justify-center">
-            <div id="chart_mon" class="bg-soft-red h-full w-12 rounded-md flex"></div>
-            <button class="text-xs  mt-2 text-mediumBrown">Mon</button>
+          <div id="monday" class="flex flex-col items-center justify-end">
+            <div id="mon_pop" class="bg-black w-16 rounded-md mb-1 text-center p-1 hidden">
+              <p id="mon-pop-text" class="text-white text-sm font-bold">$ 00.0</p>
+            </div>
+            <div id="chart_mon" class="bg-soft-red w-12 rounded-md flex hover:bg-hover-red"></div>
+            <p id="day1" class="text-xs  mt-2 text-mediumBrown font-normal">Mon</p>
           </div>
-          <div class="flex flex-col items-center justify-center">
-            <div id="chart_tue" class="bg-soft-red h-full w-12 rounded-md"></div>
-            <button class="text-xs mt-2 text-mediumBrown">Tue</button>
+          <div id="tuesday" class="flex flex-col items-center justify-end">
+            <div id="tue_pop" class="bg-black w-16 rounded-md mb-1 text-center p-1 hidden">
+              <p id="tue-pop-text" class="text-white text-sm font-bold">$ 00.0</p>
+            </div>
+            <div id="chart_tue" class="bg-soft-red h-full w-12 rounded-md hover:bg-hover-red"></div>
+            <p id="day2" class="text-xs mt-2 text-mediumBrown font-normal">Tue</p>
           </div>
-          <div class="flex flex-col items-center justify-center">  
-            <div id="chart_wed" class="bg-soft-red h-full w-12 rounded-md"></div>
-            <button class="text-xs mt-2 text-mediumBrown">Wed</button>
+          <div id="wednesday" class="flex flex-col items-center justify-end">
+            <div id="wed_pop" class="bg-black w-16 rounded-md mb-1 text-center p-1 hidden">
+              <p id="wed-pop-text" class="text-white text-sm font-bold">$ 00.0</p>
+            </div>  
+            <div id="chart_wed" class="bg-soft-red h-full w-12 rounded-md hover:bg-hover-red"></div>
+            <p id="day3" class="text-xs mt-2 text-mediumBrown font-normal">Wed</p>
           </div>
-          <div class="flex flex-col items-center justify-center">  
-            <div id="chart_thu" class="bg-soft-red h-full w-12 rounded-md"></div>
-            <button class="text-xs mt-2 text-mediumBrown">Thu</button>
+          <div id="thursday" class="flex flex-col items-center justify-end">
+            <div id="thu_pop" class="bg-black w-16 rounded-md mb-1 text-center p-1 hidden">
+              <p id="thu-pop-text" class="text-white text-sm font-bold">$ 00.0</p>
+            </div>  
+            <div id="chart_thu" class="bg-soft-red h-full w-12 rounded-md hover:bg-hover-red"></div>
+            <p id="day4" class="text-xs mt-2 text-mediumBrown font-normal">Thu</p>
           </div>
-          <div class="flex flex-col items-center justify-center">  
-            <div id="chart_fri" class="bg-soft-red h-full w-12 rounded-md"></div>
-            <button class="text-xs mt-2 text-mediumBrown">Fri</button>
+          <div id="friday" class="flex flex-col items-center justify-end">  
+            <div id="fri_pop" class="bg-black w-16 rounded-md mb-1 text-center p-1 hidden">
+              <p id="fri-pop-text" class="text-white text-sm font-bold">$ 00.0</p>
+            </div>
+            <div id="chart_fri" class="bg-soft-red h-full w-12 rounded-md hover:bg-hover-red"></div>
+            <p id="day5" class="text-xs mt-2 text-mediumBrown font-normal">Fri</p>
           </div>
-          <div class="flex flex-col items-center justify-center">  
-            <div id="chart_sat" class="bg-soft-red h-full w-12 rounded-md"></div>
-            <button class="text-xs mt-2 text-mediumBrown">Sat</button>
+          <div id="saturday" class="flex flex-col items-center justify-end">  
+            <div id="sat_pop" class="bg-black w-16 rounded-md mb-1 text-center p-1 hidden">
+              <p id="sat-pop-text" class="text-white text-sm font-bold">$ 00.0</p>
+            </div>
+            <div id="chart_sat" class="bg-soft-red h-full w-12 rounded-md hover:bg-hover-red"></div>
+            <p id="day6" class="text-xs mt-2 text-mediumBrown font-normal">Sat</p>
           </div>
-          <div class="flex flex-col items-center justify-center">  
-            <div id="chart_sun" class="bg-soft-red h-full w-12 rounded-md"></div>
-            <button class="text-xs mt-2 text-mediumBrown">Sun</button>
+          <div id="sunday" class="flex flex-col items-center justify-end">  
+            <div id="sun_pop" class="bg-black w-16 rounded-md mb-1 text-center p-1 hidden">
+              <p id="sun-pop-text" class="text-white text-sm font-bold">$ 00.0</p>
+            </div>
+            <div id="chart_sun" class="bg-soft-red h-full w-12 rounded-md hover:bg-hover-red"></div>
+            <p id="day7" class="text-xs mt-2 text-mediumBrown font-normal">Sun</p>
           </div>
       </div>
         <hr>
         <div id="text-block" class="flex justify-between mt-4 items-end">
           <div id="text-part-1">
-            <p class="text-sm text-mediumBrown">Total this month</p>
+            <p class="text-sm text-mediumBrown font-normal">Total this month</p>
             <p class="text-4xl font-bold text-darkBrown">$478.33</p>
           </div>
           <div id="text-part-2">
             <p class="text-right font-bold text-darkBrown">+2.4%</p>
-            <p class="text-right text-mediumBrown ">from last month</p>
+            <p class="text-right text-mediumBrown font-normal">from last month</p>
           </div>
         </div>
       </div>
     </div>
   </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         "soft-red": "var(--softRed)",
+        "hover-red": "var(--hoverRed)",
         "cyan": "var(--cyan)",
         "darkBrown": "var(--darkBrown)",
         "mediumBrown": "var(--mediumBrown)",

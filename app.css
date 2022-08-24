@@ -6,6 +6,7 @@
 
 :root {
     --softRed: hsl(10, 79%, 65%);
+    --hoverRed: hsl(11, 100%, 87%);
     --cyan: hsl(186, 34%, 60%);
     --darkBrown: hsl(25, 47%, 15%);
     --mediumBrown: hsl(28, 10%, 53%);
@@ -16,12 +17,35 @@
 * {
     margin: 0;
     padding: 0;
-    transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
 }
 
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: var(--cream);
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+/* Pop Over Block Display */
+#monday:hover > #mon_pop {
+    display: block;
+}
+#tuesday:hover > #tue_pop {
+    display: block;
+}
+#wednesday:hover > #wed_pop {
+    display: block;
+}
+#thursday:hover > #thu_pop {
+    display: block;
+}
+#friday:hover > #fri_pop {
+    display: block;
+}
+#saturday:hover > #sat_pop {
+    display: block;
+}
+#sunday:hover > #sun_pop {
+    display: block;
 }
