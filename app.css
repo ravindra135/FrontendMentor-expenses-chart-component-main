@@ -6,7 +6,6 @@
 
 :root {
     --softRed: hsl(10, 79%, 65%);
-    --hoverRed: hsl(11, 100%, 87%);
     --cyan: hsl(186, 34%, 60%);
     --darkBrown: hsl(25, 47%, 15%);
     --mediumBrown: hsl(28, 10%, 53%);
@@ -25,6 +24,26 @@ body {
     transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
+}
+
+/* Attribution */
+.attribution {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--darkBrown);
+}
+
+.attribution a { 
+    color: var(--softRed);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: var(--cyan);
+    text-decoration: underline solid hsl(178, 100%, 50%);
 }
 
 /* Pop Over Block Display */
