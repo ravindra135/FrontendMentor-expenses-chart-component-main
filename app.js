@@ -40,7 +40,7 @@ function jsonExport() {
 }
 
 // Getting Day For Changing the Background of Current Day Chart Block;
-let today = d.getDay(); //getDay() is used to get day of the week as number (0-6)
+let today = d.getDay(); //getDay() is used to get day of the week as number (0-6, where 0 = sunday & 6 = saturday)
 if (today == 0) {
     document.getElementById('chart_sun').style.backgroundColor = "var(--cyan)";
 } else if (today == 1) {
