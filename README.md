@@ -31,7 +31,7 @@ Users should be able to:
 - **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 
 ### Screenshot
-<!-- 
+
 - **#1 - Desktop View**
 
 ![Desktop View](./images/desktopView.jpeg)
@@ -46,8 +46,7 @@ Users should be able to:
 
 - **#4 - Active States View**
 
-![Active States](./images/activeStates.jpeg) -->
-
+![Active States](./images/activeStates.jpeg)
 
 ### Links
 
