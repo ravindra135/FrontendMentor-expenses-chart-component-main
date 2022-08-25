@@ -13,7 +13,8 @@
 </head>
 <body>
   <main id="main-container" class="flex flex-col w-screen h-screen justify-center items-center">
-    <div class="flex flex-col p-3 gap-5 w-[30%]">
+    <div class="flex flex-col p-3 gap-5 w-screen sm:w-9/12 md:w-7/12 lg:w-[40%] xl:w-[30%]">
+      <!-- 1st Card -->
       <div class="bg-soft-red h-28 rounded-2xl p-5 flex justify-between items-center">
         <div id="text-container" class="">
           <p class="text-sm text-white font-normal">My Balance</p>
@@ -21,6 +22,7 @@
         </div>
         <img src="./images/logo.svg" alt="">
       </div>
+      <!-- Second Card -->
       <div class="bg-veryPaleOrange rounded-2xl p-5">
         <h1 class="font-bold text-3xl text-darkBrown">Spending - Last 7 Days</h1>
         <div id="chart" class="flex h-52 w-full justify-evenly py-6 mt-4">
@@ -87,7 +89,7 @@
         </div>
       </div>
     </div>
-    <div class="attribution text-center">
+    <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://www.frontendmentor.io/profile/ravindra135">Ravindra Reddy</a>.
     </div>
